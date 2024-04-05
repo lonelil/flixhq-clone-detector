@@ -6,5 +6,5 @@ test("Check FlixHQ.to (is clone)", async () => {
 });
 
 test("Check Google.com (is not clone)", async () => {
-  expect(await checkIfFlixhqClone(new URL("https://flixhq.to"))).toBe(true);
+  expect(await checkIfFlixhqClone(new URL("https://google.com"))).toBe(false);
 });
